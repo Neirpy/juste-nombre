@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>le juste nombre</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js" type="module"></script>
+
+</head>
+<body>
+<audio controls autoplay>
+  <source src="./mp3/juste_prix.mp3" type="audio/ogg">
+  <source src="./mp3/juste_prix.mp3" type="audio/mp3">
+</audio>
+
+<article>
+  <h1>Le juste nombre</h1>
+
+  <div id="timer"></div>
+  <div id="score"></div>
+  <div class="choice">
+    <label>
+      <select id="difficulty">
+        <option value="easy">Sélectionner une difficulté</option>
+        <option value="easy">Facile</option>
+        <option value="normal">Moyen</option>
+        <option value="hard">Difficile</option>
+        <option value="extra-hard">Vincent Lagaffe</option>
+      </select>
+    </label>
+    <button id="start">Commencer</button>
+  </div>
+
+  <section class="form-hide" id="numberForm">
+    <p>Devinez le juste nombre entre 0 et 99 :</p>
+    <label for="numberInput">Choisis un nombre :</label>
+    <input type="number" placeholder="Entre 0 et 99" min="0" max="99" id="numberInput">
+    <button id="submit">Valider</button>
+  </section>
+
+  <section>
+    <p id="result"></p>
+  </section>
+
+  <section class="form-hide" id="nameForm">
+    <label for="nameInput">Votre Nom :</label>
+    <input type="text" placeholder="Nom/Pseudo" id="nameInput">
+    <button id="submitName"> Valider </button>
+
+  </section>
+  <button id="restart" class="form-hide">Recommencer</button>
+</article>
+
+<footer>
+  <a href="leaderboard.html">Voir le leaderboard</a>
+</footer>
+
+</body>
+</html>
